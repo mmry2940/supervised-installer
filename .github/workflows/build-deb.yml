@@ -23,7 +23,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: homeassistant-supervised.deb
-        - name: Upload
+      - name: Upload
         uses: actions/upload-artifact@v5
         with:
           name: homeassistant-supervised.deb
