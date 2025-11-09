@@ -13,10 +13,10 @@ warn ""
 # Check if we are running on a supported OS
 BYPASS_OS_CHECK=${BYPASS_OS_CHECK:-false}
 supported_os_id="debian"
-supported_os_version_id=("12")
+supported_os_version_id=("13")
 
 source /etc/os-release
-os_supported=false
+os_supported=true
 
 if [[ "$ID" == "$supported_os_id" ]]; then
     for version in "${supported_os_version_id[@]}"; do
